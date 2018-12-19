@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>InstaShare</title>
+  </head>
+  <body class="background">
+    <div class="container">
+
+      <div class="row mx-auto">
+        <div class="col">
+          <div class="card">
+
+            <div class="card-header">
+              <br>
+              <h2 class="card-title text-center">Sign In</h2><br>
+            </div>
+
+            <div class="card-body">
+              <form method="post">
+                <div class="form-label-group">
+                      <input type="email" class="form-control" placeholder="Email" id="email" required autofocus>
+                </div>
+
+                <div class="form-label-group">
+                  <input type="password" class="form-control" placeholder="Password" id="password" required autofocus>
+                </div>
+                <button type="submit" onclick="login()" class="btn btn-primary" name="button">SignIn</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAZl4njrCOAXCrqfdThjtDqV_sXX53Ha0g",
+    authDomain: "goku-35fcd.firebaseapp.com",
+    databaseURL: "https://goku-35fcd.firebaseio.com",
+    projectId: "goku-35fcd",
+    storageBucket: "goku-35fcd.appspot.com",
+    messagingSenderId: "148949139670"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="login.js"></script>
+
+</html>

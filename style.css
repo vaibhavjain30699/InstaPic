@@ -1,0 +1,32 @@
+.background{
+  background-image: url("image1.jpg");
+  height: 100% ;
+  background-repeat: no-repeat;
+}
+
+.card{
+  margin-left: 35%;
+  margin-top: 22%;
+  background: #8888CC;
+  opacity: 0.8 ;
+  width: 30%;
+  border-radius: 10px;
+}
+
+
+input[type=email], input[type=password]{
+  background-color: white;
+  width: 90%;
+  height: 40px;
+  margin-left: 4%;
+  margin-top: 20px;
+  display: inline-block;
+  border: 1px #ccc;
+  border-radius: 20px;;
+}
+
+button[type=submit]{
+  margin-top: 40px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
