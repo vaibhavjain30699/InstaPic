@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>InstaPic</title>
+    <style type="text/css">
+    	.hello{
+    		height: 50px;
+    		width: 100%;
+    		padding: 20px 50px;
+    	}
+    	h2{
+    		size: 40px;
+    		color: white;
+    		margin-left: 10px;
+    	}
+    	#log{
+    		padding: 0px 5px;
+    	}
+    	.flex-container{
+    		display: flex;
+    		height: 300px;
+    		margin-top: 100px;
+    		justify-content: center;
+    		align-items: center;
+    	}
+    </style>
+  </head>
+  <body class="background">
+  	<div class="d-flex hello">
+	  <div><img src="logo.png" alt="Logo" style="width:40px;"></div>
+	  <div id="name"><h2>InstaPic</h2></div>
+	  <div class="ml-auto" id="log"><button type="button" class="btn btn-outline-info"><a href="index.html" title="LogIn"><b>Login</b></a></button></div>
+	  <div><button type="button" class="btn btn-outline-info"><b>Sign Up</b></button></div>
+	 </div>
+	 <div class=" flex-container">
+	 <div class="carousel slide" id="pic_slide">
+	  	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="logo.png" alt="Los Angeles" width="250" height="250" align="center">
+    </div>
+    <div class="carousel-item">
+      <img src="logo.png" alt="Chicago" width="250" height="250" align="center">
+    </div>
+    <div class="carousel-item">
+      <img src="logo.png" alt="New York" width="250" height="250" align="center">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	  </div>
+	</div>
+  </body>
+</html>
+
+
+
