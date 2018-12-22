@@ -23,15 +23,15 @@
             </div>
 
             <div class="card-body">
-              <form method="post">
+              <form action="login.php" method="POST">
                 <div class="form-label-group">
-                      <input type="email" class="form-control" placeholder="Email" id="email" required autofocus>
+                      <input type="email" class="form-control" placeholder="Email" name="email" required autofocus>
                 </div>
 
                 <div class="form-label-group">
-                  <input type="password" class="form-control" placeholder="Password" id="password" required autofocus>
+                  <input type="password" class="form-control" placeholder="Password" name="password" required autofocus>
                 </div>
-                <button type="submit" onclick="login()" class="btn btn-primary" name="button">SignIn</button>
+                <button type="submit" class="btn btn-primary" name="button">SignIn</button>
               </form>
             </div>
 
@@ -43,19 +43,19 @@
   </body>
 
 
-<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAZl4njrCOAXCrqfdThjtDqV_sXX53Ha0g",
-    authDomain: "goku-35fcd.firebaseapp.com",
-    databaseURL: "https://goku-35fcd.firebaseio.com",
-    projectId: "goku-35fcd",
-    storageBucket: "goku-35fcd.appspot.com",
-    messagingSenderId: "148949139670"
-  };
-  firebase.initializeApp(config);
-</script>
-<script src="login.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAZl4njrCOAXCrqfdThjtDqV_sXX53Ha0g",
+      authDomain: "goku-35fcd.firebaseapp.com",
+      databaseURL: "https://goku-35fcd.firebaseio.com",
+      projectId: "goku-35fcd",
+      storageBucket: "goku-35fcd.appspot.com",
+      messagingSenderId: "148949139670"
+    };
+    firebase.initializeApp(config);
+  </script>
 
 </html>
