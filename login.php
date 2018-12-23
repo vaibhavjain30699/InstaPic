@@ -17,14 +17,14 @@
     if(mysqli_num_rows($result)==1){
       //$file = file_get_html('user.html');
       //readfile("user.html");
-      echo file_get_contents("user.html");
+      echo file_get_contents("redirect2.html");
       exit();
     }
     else{
       echo '<script language="javascript">';
       echo 'alert("Invalid  Credentials")';
       echo '</script>';
-      echo file_get_contents("index.html");
+      echo file_get_contents("redirect1.html");
       exit();
     }
 

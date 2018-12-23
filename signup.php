@@ -17,20 +17,20 @@
       echo '<script language="javascript">';
       echo 'alert("Registered Successfully")';
       echo '</script>';
-      echo file_get_contents("index.html");
+      echo file_get_contents("redirect1.html");
     }
     else {
       echo '<script language="javascript">';
       echo 'alert("Registration Unsuccessful")';
       echo '</script>';
-      echo file_get_contents("signup.html");
+      echo file_get_contents("redirect.html");
     }
   }
   else {
     echo '<script language="javascript">';
     echo 'alert("Confirm Password not equal to Password")';
     echo '</script>';
-    echo file_get_contents("signup.html");
+    echo file_get_contents("redirect.html");
   }
 
  ?>
